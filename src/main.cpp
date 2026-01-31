@@ -17,26 +17,30 @@ int main() {
 
 	cout << "Player HP: " << playerHealth << endl;
 	cout << "Monster HP: " << monsterHealth << endl;
+	if (){
+		switch (choice) {
+		case 1:
+			attack(monsterHealth, playerHealth);
+			break;
 
-	switch (choice) {
-	case 1:
-		attack(monsterHealth, playerHealth);
-		break;
+		case 2:
+			heal(playerHealth);
+			break;
 
-	case 2:
-		heal(playerHealth);
-		break;
-
-	case 3:
-		return false;
-	default: 
-		return true;
+		case 3:
+			return false;
+		default:
+			return true;
+		}
 	}
+	
 
 
 
 
 }
+
+bool 
 
 void attack(int &monsterHealth, int &playerHealth) {
 	int playerDamage = (rand() % 20) + 1;
